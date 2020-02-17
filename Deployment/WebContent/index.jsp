@@ -7,7 +7,7 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body> 
 <%@ page import = "java.util.Date,gui.TextOutput"  %>
 
 DO GET or DO POST contains this:

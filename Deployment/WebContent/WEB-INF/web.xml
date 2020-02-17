@@ -19,7 +19,6 @@
     <servlet-name>Hello</servlet-name>
     <url-pattern>/HelloWorld</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <description></description>
     <display-name>Login</display-name>
@@ -29,5 +28,15 @@
   <servlet-mapping>
     <servlet-name>Login</servlet-name>
     <url-pattern>/loginpage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>URLParameters</display-name>
+    <servlet-name>URLParameters</servlet-name>
+    <servlet-class>gui.URLParameters</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>URLParameters</servlet-name>
+    <url-pattern>/URLParameters</url-pattern>
   </servlet-mapping>
 </web-app>
