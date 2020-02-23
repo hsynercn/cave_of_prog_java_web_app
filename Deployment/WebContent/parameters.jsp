@@ -13,7 +13,7 @@
 String name = request.getParameter("user");
 String id = request.getParameter("id");
 
-out.println("Name: " + nameaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa);
+out.println("Name: " + name);
 
 %>
 
