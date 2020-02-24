@@ -8,12 +8,12 @@
 </head>
 <body>
 
-<!-- Scope session depends on the cookie -->
-<jsp:useBean id="user" class="bean.User" scope="session"></jsp:useBean>
+<!-- Wont work with page scope -->
+<jsp:useBean id="user3" class="bean.User" scope="request"></jsp:useBean>
 
-Email: <%= user.getEmail() %>
+Email: <%= user3.getEmail() %>
 <p/>
-Password: <%= user.getPassword() %>
+Password: <%= user3.getPassword() %>
 
 </body>
 </html>
