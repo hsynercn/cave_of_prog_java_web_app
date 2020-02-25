@@ -10,9 +10,10 @@
 
 <jsp:useBean id="user5" class="bean.User" scope="page"></jsp:useBean>
 
-<jsp:setProperty property="password" name="user5" value="let me in"/>
+<jsp:setProperty property="*" name="user5"/>
 
 <%= user5.getPassword() %>
+<%= user5.getEmail() %>
 
 </body>
 </html>
