@@ -28,7 +28,13 @@ public class Session extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		Cart cart = new Cart();
+		
+		Cart cart = (Cart)session.getAttribute("cart");
+		
+		if(cart==null) {
+			cart = new Cart();
+		}
+		
 		cart.setTotalItems(7);
 		session.setAttribute("cart", cart);
 		getServletContext().getRequestDispatcher("/showcart.jsp").forward(request, response);
